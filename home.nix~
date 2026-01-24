@@ -1,0 +1,12 @@
+{ lib, pkgs, ... }:
+{
+  home = {
+       packages = with pkgs; [
+       hello
+       ];
+
+       username = "thiago";
+       homeDirectory = "/home/thiago/";
+       stateVersion = "25.11";
+       };
+ }
