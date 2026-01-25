@@ -1,14 +1,17 @@
 { lib, pkgs, ... }:
 let username = "thiago"; in {
+
+  imports = [ ./modules/home/bash.nix ];
+  
   home = {
        packages = with pkgs; [
-       moc                waypaper
-       bash		  swww
-       rxvt-unicode       git-credential-manager
-       dmenu              git
-       firefox
-       pulseaudioFull
-       pavucontrol
+       moc                waypaper                  mpv
+       bash		  swww                      bat
+       rxvt-unicode       git-credential-manager    htop
+       dmenu              git                       discord
+       firefox            rmpc
+       pulseaudioFull     mpd
+       pavucontrol        mpc
        ];
 
        username = "thiago";
