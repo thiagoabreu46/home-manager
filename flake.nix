@@ -15,6 +15,7 @@
 		     lib = nixpkgs.lib;
 		     system = "x86_64-linux";
 		     pkgs = import nixpkgs { inherit system; };
+		     config.allowUnfree = true;
 		 in {
 		     homeConfigurations = {
 		      thiagoabreu46 = home-manager.lib.homeManagerConfiguration {
