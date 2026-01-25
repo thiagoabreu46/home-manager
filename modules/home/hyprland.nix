@@ -2,7 +2,7 @@
 
 {
    wayland.windowManager.hyprland.enable = true;
-   programs.kitty.enable = true;
+   programs.hyprpanel.enable = true;
    home.sessionVariables = {
      EDITOR = "emacs";
      TERM   = "alacritty";
@@ -14,6 +14,7 @@
       [
         "$mod, F, exec, firefox"
         ", Print, exec, grimblast copy area"
+	"$mod, Shift, Return, exec alacritty"
       ]
       ++ (
         # workspaces
