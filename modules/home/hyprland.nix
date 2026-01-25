@@ -2,6 +2,7 @@
 
 {
    wayland.windowManager.hyprland.enable = true;
+   programs.kitty.enable = true;
    home.sessionVariables = {
      EDITOR = "emacs";
      TERM   = "alacritty";
