@@ -1,0 +1,12 @@
+{ config, pkgs, ... }:
+
+{
+
+ programs.git = {
+     extraConfig.credential.helper = "manager";
+     extraConfig.credential."https://github.com".username = "thiagoabreu46";
+     extraConfig.credential.credentialStore = "cache";
+     enable = true;
+   };
+  
+ }

@@ -1,0 +1,6 @@
+{ pkgs, config, ... }:
+
+{
+    home.file = { "/home/thiago/.config/waypaper/waypaper.ini".source = ../scripts/waypaper;  
+  };
+}

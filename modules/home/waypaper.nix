@@ -1,0 +1,36 @@
+{ pkgs, config, ... }:
+
+{
+    home.file = { "/home/thiago/.config/waypaper/config.ini".text = ''
+
+[Settings]
+
+language = en
+folder = ~/Pictures
+wallpaper = ~/Pictures/wallpapers/*
+backend = swww
+monitors = All
+fill = Fill
+sort = name
+color = #ffffff
+subfolders = False
+all_subfolders = False
+show_hidden = False
+show_gifs_only = False
+show_path_in_tooltip = True
+number_of_columns = 3
+use_xdg_state = False
+zen_mode = False
+swww_transition_type = any
+swww_transition_step = 63
+swww_transition_angle = 0
+swww_transition_duration = 2
+swww_transition_fps = 60
+mpvpaper_sound = False
+mpvpaper_options = 
+post_command =
+
+'';
+
+  };
+}

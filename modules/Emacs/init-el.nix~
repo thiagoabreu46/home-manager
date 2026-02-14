@@ -1,0 +1,28 @@
+{ pkgs, config, lib, ... }:
+
+{
+   programs.emacs = {
+     enable = true;
+     extraConfig = ''
+     
+     (setq user-full-name "Thiago Henrique de Souza Abreu")
+     (setq user-email-adress "thiagoabreu293@gmail.com")
+
+     (when window-system
+     (tool-bar-mode 0)
+     (scroll-bar-mode 0)
+     (tooltip-mode 0)
+     (menu-bar-mode 0))
+     
+     (use-package emacs
+     :init 
+     (set-face-attribute 'default nil
+       :font "TerminessNerdFontMono"
+       :height 95
+      ))
+     
+     '';
+   };
+ #  imports =
+ #  [ ./theme-el.nix ];
+}

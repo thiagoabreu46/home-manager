@@ -1,0 +1,11 @@
+{ config, pkg, ... }:
+{
+
+imports = [ ../scripts/bar.nix ]
+
+let scripts = {
+  bar = writeShellApplications { ... };
+};
+
+in { ... };
+}
